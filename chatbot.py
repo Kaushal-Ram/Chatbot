@@ -27,9 +27,9 @@ st.session_state["prompt"] = ChatPromptTemplate.from_messages(
     )
 st.session_state["chain"] = st.session_state["prompt"]|st.session_state["model"]
 
-def change_model():
-    st.session_state["model"] = ChatGroq(model = st.session_state["models"][st.session_state["selected_model"]])
-    st.session_state["chain"] = st.session_state["prompt"]|st.session_state["model"]
+#def change_model():
+#    st.session_state["model"] = ChatGroq(model = st.session_state["models"][st.session_state["selected_model"]])
+#    st.session_state["chain"] = st.session_state["prompt"]|st.session_state["model"]
 
 model_selected = st.selectbox("Choose a model", list(st.session_state["models"].keys()), key = "selected_model")
 
