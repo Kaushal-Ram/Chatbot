@@ -5,7 +5,7 @@ from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate,MessagesPlaceholder
 import warnings
 
-## Set an environment variable GROQ_API_KEY containing your key or uncomment below code to set it here
+## Set an environment variable GROQ_API_KEY containing your key or uncomment below code to set it using a password
 #import getpass
 #os.environ['GROQ_API_KEY'] = getpass.getpass()
 
