@@ -5,6 +5,10 @@ from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate,MessagesPlaceholder
 import warnings
 
+## Set an environment variable GROQ_API_KEY containing your key or uncomment below code to set it here
+#import getpass
+#os.environ['GROQ_API_KEY'] = getpass.getpass()
+
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 os.environ['TOKENIZERS_PARALLELISM'] = "False"
